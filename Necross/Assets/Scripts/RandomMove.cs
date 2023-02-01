@@ -6,34 +6,52 @@ using Random = UnityEngine.Random;
 
 public class RandomMove : MonoBehaviour
 {
-    public Spawner ship_spawner;
-    public GameObject game_area;
- 
-    public float speed;
+    public float wanderRadius = 0;
+    public float wanderSpeed = 0;
+    public float wanderTimer = 0;
 
-    void Update()
+    private Vector3 targetPosition;
+    private float timer;
+
+    public GameObject center;
+
+    public bool reCenter = false;
+
+    private void Start()
     {
-        Move();
+        wanderRadius = Random.Range(5, 15);
+        wanderSpeed = Random.Range(1, 2);
+        wanderTimer = Random.Range(5, 15);
+            
+        targetPosition = transform.position;
+        timer = wanderTimer;
     }
- 
-    void Move()
-    {
-        /** Move this ship forward per frame, if it gets too far from the game area, destroy it **/
- 
-        transform.position += transform.up * (Time.deltaTime * speed);
 
-        float distance = Vector3.Distance(transform.position, game_area.transform.position);
-        if(distance > ship_spawner.death_circle_radius)
+    private void Update()
+    {
+        timer += Time.deltaTime;
+
+        if (reCenter == true)
         {
-            RemoveShip();
+            transform.position = Vector3.MoveTowards(transform.position, center.transform.position, wanderSpeed * Time.deltaTime);
         }
+        
+        if (timer >= wanderTimer)
+        {
+            targetPosition = transform.position + Random.insideUnitSphere * wanderRadius;
+            timer = 0;
+        }
+
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, wanderSpeed * Time.deltaTime);
     }
- 
-    void RemoveShip()
+
+    private void OnTriggerExit2D(Collider2D other)
     {
-        /** Update the total ship count and then destroy this individual ship. **/
- 
-        Destroy(gameObject);
-        ship_spawner.ship_count -= 1;
+        reCenter = false;
+    }
+
+    public void reverseDirection()
+    {
+        reCenter = true;
     }
 }

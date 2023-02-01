@@ -5,6 +5,7 @@ using UnityEngine;
 public class DestroyThis : MonoBehaviour
 {
     public float deathTimer;
+    public GameObject controller;
 
     public void DestroyObject()
     {
@@ -15,5 +16,10 @@ public class DestroyThis : MonoBehaviour
     {
         yield return new WaitForSeconds(deathTimer);
         Destroy(this.gameObject);
+    }
+
+    public void DestroyAll()
+    {
+        Destroy(controller);
     }
 }
