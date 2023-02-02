@@ -14,6 +14,13 @@ public class IntData : ScriptableObject
 
     public void Decrease(int amount)
     {
-        value -= amount;
+        if (value < amount)
+        {
+            return;
+        }
+        else if (value >= amount)
+        {
+            value -= amount;
+        }
     }
 }

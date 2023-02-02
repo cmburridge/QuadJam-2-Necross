@@ -22,7 +22,7 @@ public class OnMouseMove : MonoBehaviour
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             target.z = transform.position.z;
             Instantiate(prefab, target, Quaternion.identity);
-            target.y += 3;
+            target.y += 2;
         }
         
         transform.position = Vector3.Lerp(transform.position, target, speed * Time.deltaTime);

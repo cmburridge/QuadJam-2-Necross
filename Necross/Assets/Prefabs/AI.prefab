@@ -56,7 +56,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &1000912078
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
   wanderRadius: 10
   wanderSpeed: 2
   wanderTimer: 5
-  center: {fileID: 0}
+  center: {fileID: 8924144879628834648, guid: 20ce97c04d990e64492bc17c3b414b9b, type: 3}
   reCenter: 0
 --- !u!114 &1793925441
 MonoBehaviour:
@@ -564,6 +564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 2380303270609221209, guid: e7d6e2a69a7db1445b94e4267f34ac14, type: 3}
+  time: 0
 --- !u!114 &5934378676213056883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,3 +579,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTimer: 0
   controller: {fileID: 3035211874592680505}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []

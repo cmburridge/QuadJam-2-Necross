@@ -148,6 +148,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathTimer: 0
+  controller: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1064888979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +169,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1064888978}
         m_TargetAssemblyTypeName: DestroyThis, Assembly-CSharp
-        m_MethodName: DestroyObject
+        m_MethodName: DestroyObjectTimed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -192,7 +196,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1064888978}
         m_TargetAssemblyTypeName: DestroyThis, Assembly-CSharp
-        m_MethodName: DestroyObject
+        m_MethodName: DestroyObjectTimed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15f6a594a68f13e4484c90933e7e8cd5, type: 3}
-  m_Name: SoulCount
+  m_Script: {fileID: 11500000, guid: 92fe110f75c7f7b4eabf8967d58b7719, type: 3}
+  m_Name: Grimiore
   m_EditorClassIdentifier: 
-  value: 50
+  prefab: {fileID: 1053654818564820815, guid: e404a384c2b3b3c4694bb3fa0c22cdf8, type: 3}
+  art: {fileID: 21300000, guid: 59098d89e837755419fd249d3799ceaa, type: 3}

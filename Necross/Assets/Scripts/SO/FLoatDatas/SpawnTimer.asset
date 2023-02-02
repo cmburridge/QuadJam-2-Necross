@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15f6a594a68f13e4484c90933e7e8cd5, type: 3}
-  m_Name: SoulCount
+  m_Script: {fileID: 11500000, guid: 564ce1bce385b75499f85b5f755e6d76, type: 3}
+  m_Name: SpawnTimer
   m_EditorClassIdentifier: 
-  value: 50
+  value: 2
