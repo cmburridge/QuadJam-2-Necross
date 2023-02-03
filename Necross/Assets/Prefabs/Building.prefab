@@ -312,7 +312,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: {fileID: 11400000, guid: 36e4c45af6bf7d04fa38e3aae730e747, type: 2}
-  amount: 0.35
+  amount: 0.3
+  min: 0.25
 --- !u!114 &2068775234
 MonoBehaviour:
   m_ObjectHideFlags: 0

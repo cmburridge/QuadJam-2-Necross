@@ -10,6 +10,7 @@ public class SceneController : MonoBehaviour
 
     public void ChangeScene(int sceneNum)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(sceneNum);
     }
 

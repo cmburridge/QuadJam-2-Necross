@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564ce1bce385b75499f85b5f755e6d76, type: 3}
   m_Name: SpawnTimer
   m_EditorClassIdentifier: 
-  value: 2
+  value: 0.15
   start: 2

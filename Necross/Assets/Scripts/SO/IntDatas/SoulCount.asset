@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f6a594a68f13e4484c90933e7e8cd5, type: 3}
   m_Name: SoulCount
   m_EditorClassIdentifier: 
-  value: 98082
+  value: 683
   start: 0
