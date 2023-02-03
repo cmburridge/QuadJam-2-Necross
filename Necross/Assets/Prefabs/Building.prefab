@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7542734225557889146}
   - component: {fileID: 1947981654364708523}
   - component: {fileID: 7505447770023056756}
+  - component: {fileID: 6596189994459334307}
   m_Layer: 14
   m_Name: Building
   m_TagString: Untagged
@@ -69,6 +70,7 @@ MonoBehaviour:
   canPlace: {fileID: 11400000, guid: 3f10612aa1cb69a4f9187de2d96c9e69, type: 2}
   cost: {fileID: 11400000, guid: 21a099b0b22a1dc49887eb2cfc1e4072, type: 2}
   souls: {fileID: 11400000, guid: 5ee619c6ded25374c89eb10148a802d3, type: 2}
+  loc: {x: 0, y: 0, z: 0}
   prefab: {fileID: 3083411767697419762, guid: 168fbe9fefaea4e42a0e5c72714b3bd1, type: 3}
 --- !u!50 &1947981654364708523
 Rigidbody2D:
@@ -117,6 +119,102 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!82 &6596189994459334307
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053654818564820815}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3b967dcf89821a74791682f3fe7b54b2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3632651495092564816
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +226,7 @@ GameObject:
   - component: {fileID: 4858777495374731883}
   - component: {fileID: 7117595480029440603}
   - component: {fileID: 5699262147271014769}
+  - component: {fileID: 2068775234}
   m_Layer: 0
   m_Name: Grimiore
   m_TagString: Untagged
@@ -186,8 +285,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -965336729
+  m_SortingLayer: -1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 59098d89e837755419fd249d3799ceaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -214,3 +313,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: {fileID: 11400000, guid: 36e4c45af6bf7d04fa38e3aae730e747, type: 2}
   amount: 0.35
+--- !u!114 &2068775234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632651495092564816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d00a13911d82346b0c52756964ea80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 7117595480029440603}

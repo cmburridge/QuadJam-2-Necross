@@ -12,12 +12,12 @@ public class GameLoop : MonoBehaviour
 
     private void Update()
     {
-        if (UndeadCount.value >= 500)
+        if (UndeadCount.value >= 250)
         {
             firstMilestone.Invoke();
         }
         
-        if (UndeadCount.value >= 1000)
+        if (UndeadCount.value >= 500)
         {
             secondMilestone.Invoke();
         }
