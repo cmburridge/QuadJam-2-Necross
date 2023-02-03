@@ -5184,7 +5184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 882889584}
   intD: {fileID: 11400000, guid: 61d52bf890f55124eb294d4059747d7b, type: 2}
-  amount: 100
+  amount: 80
   soulCount: {fileID: 11400000, guid: 5ee619c6ded25374c89eb10148a802d3, type: 2}
   colorBlue: {fileID: 973692645}
   colorRed: {fileID: 800442929}
@@ -5597,7 +5597,7 @@ MonoBehaviour:
         m_MethodName: Decrease
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 370a06f1fbf61534596bbbf3444e956d, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 21a099b0b22a1dc49887eb2cfc1e4072, type: 2}
           m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
           m_IntArgument: 50
           m_FloatArgument: 0
@@ -6562,7 +6562,7 @@ MonoBehaviour:
         m_MethodName: Decrease
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 44065f614faabef46966ae8deeb7dc97, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 343f20cae5ea5ac43aeb15a3d2c2b8a0, type: 2}
           m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
           m_IntArgument: 50
           m_FloatArgument: 0
@@ -8391,11 +8391,11 @@ RectTransform:
   - {fileID: 2061453915}
   - {fileID: 841613180}
   m_Father: {fileID: 1809258026}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -525, y: -452.99994}
+  m_AnchoredPosition: {x: -275, y: -452.99994}
   m_SizeDelta: {x: 4.32, y: 4.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1454489279
@@ -8558,7 +8558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 1501472896}
   intD: {fileID: 11400000, guid: 61d52bf890f55124eb294d4059747d7b, type: 2}
-  amount: 50
+  amount: 10
   soulCount: {fileID: 11400000, guid: 5ee619c6ded25374c89eb10148a802d3, type: 2}
   colorBlue: {fileID: 973692645}
   colorRed: {fileID: 800442929}
@@ -10151,11 +10151,11 @@ RectTransform:
   - {fileID: 1056419347}
   - {fileID: 79633340}
   m_Father: {fileID: 1809258026}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -275.00006, y: -452.99994}
+  m_AnchoredPosition: {x: -525, y: -452.99994}
   m_SizeDelta: {x: 4.32, y: 4.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1759865396
@@ -10438,8 +10438,8 @@ RectTransform:
   - {fileID: 2097823515}
   - {fileID: 1344563319}
   - {fileID: 1064723345}
-  - {fileID: 1454489278}
   - {fileID: 1759865395}
+  - {fileID: 1454489278}
   - {fileID: 119645302}
   - {fileID: 1286338987}
   - {fileID: 1918615091}
@@ -10468,6 +10468,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2097823514}
   isPaused: 0
+  savedNum: 0
+  time: 2
 --- !u!1 &1819754938
 GameObject:
   m_ObjectHideFlags: 0
@@ -11859,6 +11861,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1809258027}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: ChangeSceneTimed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   notTriggered:
     m_PersistentCalls:
       m_Calls: []
@@ -12254,7 +12268,7 @@ MonoBehaviour:
         m_MethodName: Decrease
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 21a099b0b22a1dc49887eb2cfc1e4072, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 3b6d75c8922972f4eac5177498c34e6e, type: 2}
           m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
           m_IntArgument: 50
           m_FloatArgument: 0
@@ -12667,7 +12681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 2120125388}
   intD: {fileID: 11400000, guid: 61d52bf890f55124eb294d4059747d7b, type: 2}
-  amount: 10
+  amount: 30
   soulCount: {fileID: 11400000, guid: 5ee619c6ded25374c89eb10148a802d3, type: 2}
   colorBlue: {fileID: 973692645}
   colorRed: {fileID: 800442929}

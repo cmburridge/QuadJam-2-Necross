@@ -8,10 +8,26 @@ public class SceneController : MonoBehaviour
     public GameObject pauseMenu;
     public bool isPaused = false;
 
+    public int savedNum;
+
+    public float time;
+
     public void ChangeScene(int sceneNum)
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(sceneNum);
+    }
+
+    public void ChangeSceneTimed(int sceneNum)
+    {
+        savedNum = sceneNum;
+        StartCoroutine(Change());
+    }
+
+    IEnumerator Change()
+    {
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene(savedNum);
     }
 
     void Update()
