@@ -8,11 +8,21 @@ public class DestroyThis : MonoBehaviour
 {
     public float deathTimer;
     public GameObject controller;
+    public FloatData portalTimer;
+    public UnityEvent unSpawn;
+
+    public bool isPortal = false;
+    
     public UnityEvent startEvent;
     
     public void Start()
     {
-       startEvent.Invoke();
+        if (isPortal == true)
+        {
+            deathTimer = portalTimer.value;
+        }
+       
+        startEvent.Invoke();
     }
 
     public void DestroyObjectTimed()
@@ -28,6 +38,7 @@ public class DestroyThis : MonoBehaviour
 
     public void DestroyAll()
     {
+        unSpawn.Invoke();
         Destroy(controller);
     }
 }

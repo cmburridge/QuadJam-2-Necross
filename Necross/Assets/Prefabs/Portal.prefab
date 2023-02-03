@@ -45,6 +45,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 3035211874592680505, guid: ebd74e19c15380e4cb5fa06bb0484806, type: 3}
   time: {fileID: 11400000, guid: 36e4c45af6bf7d04fa38e3aae730e747, type: 2}
+  isCrypt: 0
+  isBoostedAI: 0
+  isON: {fileID: 0}
+  timer: 0
+  timerMax: 0
+  amountToSpawn: 200
+  randomMax: {fileID: 0}
 --- !u!1 &5705173606886511764
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,8 +171,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7191e1f0af7bd584197c3196ef4d12a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathTimer: 6
+  deathTimer: 5
   controller: {fileID: 0}
+  portalTimer: {fileID: 11400000, guid: 398f7c0349a522947a00e727e63dc2e8, type: 2}
+  unSpawn:
+    m_PersistentCalls:
+      m_Calls: []
+  isPortal: 1
   startEvent:
     m_PersistentCalls:
       m_Calls:
@@ -208,6 +220,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5705173606886512493}
+        m_TargetAssemblyTypeName: TriggerEvent, Assembly-CSharp
+        m_MethodName: TurnOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  notTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  hasTriggered: 0
+  isMirror: 0
+  timer: 0
+  timerMax: 20
 --- !u!61 &5705173606886512494
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -6,21 +6,22 @@ using UnityEngine;
 public class IntData : ScriptableObject
 {
     public int value;
+    public int start = 0;
 
     public void Increase(int amount)
     {
         value += amount;
     }
 
-    public void Decrease(int amount)
+    public void Decrease(IntData amount)
     {
-        if (value < amount)
-        {
-            return;
-        }
-        else if (value >= amount)
-        {
-            value -= amount;
-        }
+        var newNum = amount.value;
+
+        value -= newNum;
+    }
+    
+    public void reset()
+    {
+        value = start;
     }
 }

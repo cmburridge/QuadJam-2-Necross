@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: SpawnTimer
   m_EditorClassIdentifier: 
   value: 2
+  start: 2

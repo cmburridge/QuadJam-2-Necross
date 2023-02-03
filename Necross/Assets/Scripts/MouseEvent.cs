@@ -9,6 +9,7 @@ public class MouseEvent : MonoBehaviour
     public UnityEvent MouseButtonDown;
     public UnityEvent MouseDown;
     public UnityEvent MouseOver;
+    public UnityEvent MouseOff;
     public int mouseButton = 1;
     
     private void Update()
@@ -27,5 +28,10 @@ public class MouseEvent : MonoBehaviour
     private void OnMouseEnter()
     {
         MouseOver.Invoke();
+    }
+
+    private void OnMouseExit()
+    {
+        MouseOff.Invoke();
     }
 }

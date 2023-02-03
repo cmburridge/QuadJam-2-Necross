@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7773232668279297608}
   - component: {fileID: 2250161406796232201}
   - component: {fileID: 1000909086}
+  - component: {fileID: 6396989197991615460}
   m_Layer: 8
   m_Name: KillAi
   m_TagString: Untagged
@@ -146,6 +147,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTimer: 1
   controller: {fileID: 0}
+  portalTimer: {fileID: 0}
+  unSpawn:
+    m_PersistentCalls:
+      m_Calls: []
+  isPortal: 0
   startEvent:
     m_PersistentCalls:
       m_Calls:
@@ -161,3 +167,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6396989197991615460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773232668279297623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279092488cd857e4e9feecf0fdd16a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: {fileID: 11400000, guid: e5dc4b058d9e20647a2090a2fccaa7fc, type: 2}

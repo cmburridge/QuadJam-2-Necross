@@ -6,4 +6,10 @@ using UnityEngine;
 public class FloatData : ScriptableObject
 {
     public float value;
+    public float start;
+
+    public void reset()
+    {
+        value = start;
+    }
 }

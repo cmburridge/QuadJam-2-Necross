@@ -18,11 +18,11 @@ TagManager:
   - Player
   - PickUp
   - Interact
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PlaceArea
+  - PlaceCheck
+  - Mirror
+  - AiMirror
+  - EndGame
   - 
   - 
   - 
