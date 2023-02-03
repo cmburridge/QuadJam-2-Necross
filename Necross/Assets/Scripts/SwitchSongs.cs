@@ -11,11 +11,5 @@ public class SwitchSongs : MonoBehaviour
     void Update()
     {
         audSr.volume = slider.value;
-        
-        if (audSr.isPlaying == false)
-        {
-            num = Random.Range(0, clips.Capacity);
-            audSr.PlayOneShot(clips[num]);
-        }
     }
 }

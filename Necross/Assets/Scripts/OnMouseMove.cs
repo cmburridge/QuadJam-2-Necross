@@ -11,6 +11,8 @@ public class OnMouseMove : MonoBehaviour
 
     public GameObject prefab;
 
+    public GameObject text;
+
     private void Start()
     {
         target = transform.position;
@@ -22,6 +24,7 @@ public class OnMouseMove : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(1))
             {
+                text.SetActive(false);
                 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 target.z = transform.position.z;
                 Instantiate(prefab, target, Quaternion.identity);

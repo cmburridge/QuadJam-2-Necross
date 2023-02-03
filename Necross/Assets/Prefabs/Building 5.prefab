@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: {fileID: 11400000, guid: e5dc4b058d9e20647a2090a2fccaa7fc, type: 2}
-  amount: 0.3
+  amount: 1
 --- !u!114 &329724414
 MonoBehaviour:
   m_ObjectHideFlags: 0
