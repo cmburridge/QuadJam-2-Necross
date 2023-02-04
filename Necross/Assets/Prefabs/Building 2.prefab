@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canPlace: {fileID: 11400000, guid: 3f10612aa1cb69a4f9187de2d96c9e69, type: 2}
-  cost: {fileID: 11400000, guid: 370a06f1fbf61534596bbbf3444e956d, type: 2}
+  cost: {fileID: 11400000, guid: 21a099b0b22a1dc49887eb2cfc1e4072, type: 2}
   souls: {fileID: 11400000, guid: 5ee619c6ded25374c89eb10148a802d3, type: 2}
   loc: {x: 0, y: 0, z: 0}
   prefab: {fileID: 3083411767697419762, guid: 168fbe9fefaea4e42a0e5c72714b3bd1, type: 3}
